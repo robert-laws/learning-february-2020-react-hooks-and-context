@@ -1,12 +1,19 @@
 import React from 'react';
+
 import './App.scss';
+
+import Header from './components/Header'
+import Balance from './components/Balance'
+import IncomeExpenses from './components/IncomeExpenses';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>APP</h1>
-      </header>
+    <div>
+      <Header />
+      <div className="container">
+        <Balance />
+        <IncomeExpenses />
+      </div>
     </div>
   );
 }
